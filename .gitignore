@@ -1,0 +1,16 @@
+*.exe
+*.out
+*.o
+*.obj
+
+
+.vscode/
+
+build/
+bin/
+
+*.log
+*.tmp
+
+.DS_Store
+thumbs.db
