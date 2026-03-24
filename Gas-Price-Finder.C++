@@ -22,6 +22,8 @@ Shell.CurrentGasPrice = 2.70;
 Shell.PreviousGasPrice = 2.80;
 Shell.GasPriceDifference = Shell.CurrentGasPrice - Shell.PreviousGasPrice;
 
+// Add logic for gasprice difference here, if GPD is < 0 then print .... if else ....
+
  
 
 cout << "Shells Current Gas Price Avg. is : $" << Shell.CurrentGasPrice << "/gal" << endl;
@@ -32,7 +34,7 @@ cout << "The Gas Price Difference is : " << Shell.GasPriceDifference << endl;
     return 0;
 }
 
-
+// Output above has to be deleted later, was jsut used for testing and workign with classes
 
 
 
