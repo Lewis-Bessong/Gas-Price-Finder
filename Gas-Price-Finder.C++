@@ -20,22 +20,14 @@ int main () {
 GasBrands Shell;
 Shell.CurrentGasPrice = 2.70;
 Shell.PreviousGasPrice = 2.80;
+Shell.GasPriceDifference = Shell.CurrentGasPrice - Shell.PreviousGasPrice;
 
-if (Shell.CurrentGasPrice < Shell.PreviousGasPrice) {
+ 
 
-    Shell.GasPriceDifference = Shell.PreviousGasPrice - Shell.CurrentGasPrice;
-} else if (Shell.CurrentGasPrice > Shell.PreviousGasPrice) {
+cout << "Shells Current Gas Price Avg. is : $" << Shell.CurrentGasPrice << "/gal" << endl;
+cout << "Shells Previous Gas Price Avg. was: " << Shell.PreviousGasPrice << "/gal" << endl;
 
-    Shell.GasPriceDifference = Shell.CurrrentGasPrice - Shell.PreciousGasPrice;
-}
-
-// Shell.GasPriceDifference 
-
-
-cout << "Shells Avg. Current Gas Price is : $" << Shell.CurrentGasPrice << "/gal" << endl;
-cout << "Shells Avg. Previous Gas Price was: " << Shell.PreviousGasPrice << "/gal" << endl;
-
-cout << "The Difference avg. is : " << 
+cout << "The Gas Price Difference is : " << Shell.GasPriceDifference << endl;
 
     return 0;
 }
