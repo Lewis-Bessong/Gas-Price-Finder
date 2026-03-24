@@ -1,4 +1,30 @@
 #include <iostream>
+#include <string>
+
+using namespace std;
+
+class GasBrands {
+    public: 
+
+        string CurrentGasPrice;
+        string PreviousGasPrice;
+    
+
+};
+
+int main () {
+
+// Shell 
+
+GasBrands Shell;
+Shell.CurrentGasPrice = "$2.60 - $2.75";
+Shell.PreviousGasPrice = "2.60 - 2.70";
+
+cout << "Shells Current Gas Price is : " << Shell.CurrentGasPrice << " Per Gallon" << endl;
+cout << "Shells Previous Gas Price is : " << Shell.PreviousGasPrice << " Per Gallon" << endl;
+
+    return 0;
+}
 
 
 
