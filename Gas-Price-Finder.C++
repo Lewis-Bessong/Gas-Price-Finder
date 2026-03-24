@@ -24,12 +24,46 @@ Shell.GasPriceDifference = Shell.CurrentGasPrice - Shell.PreviousGasPrice;
 
 // Add logic for gasprice difference here, if GPD is < 0 then print .... if else ....
 
- 
-
 cout << "Shells Current Gas Price Avg. is : $" << Shell.CurrentGasPrice << "/gal" << endl;
 cout << "Shells Previous Gas Price Avg. was: " << Shell.PreviousGasPrice << "/gal" << endl;
 
 cout << "The Gas Price Difference is : " << Shell.GasPriceDifference << endl;
+
+//Exxon
+
+GasBrands Exxon;
+Exxon.CurrentGasPrice = 2.70;
+Exxon.PreviousGasPrice = 2.80;
+Exxon.GasPriceDifference = Exxon.CurrentGasPrice - Exxon.PreviousGasPrice;
+
+//Mobil
+
+GasBrands Mobil;
+Mobil.CurrentGasPrice = 2.70;
+Mobil.PreviousGasPrice = 2.80;
+Mobil.GasPriceDifference = Mobil.CurrentGasPrice - Mobil.PreviousGasPrice;
+
+//Chevron
+
+GasBrands Chevron;
+Chevron.CurrentGasPrice = 2.70;
+Chevron.PreviousGasPrice = 2.80;
+Chevron.GasPriceDifference = Chevron.CurrentGasPrice - Chevron.PreviousGasPrice;
+
+//Chevron w/ texaco
+
+GasBrands ChevTex;
+ChevTex.CurrentGasPrice = 2.70;
+ChevTex.PreviousGasPrice = 2.80;
+ChevTex.GasPriceDifference = ChevTex.CurrentGasPrice - ChevTex.PreviousGasPrice;
+
+// BP
+
+GasBrands BP;
+BP.CurrentGasPrice = 2.70;
+BP.PreviousGasPrice = 2.80;
+BP.GasPriceDifference = BP.CurrentGasPrice - BP.PreviousGasPrice;
+
 
     return 0;
 }
