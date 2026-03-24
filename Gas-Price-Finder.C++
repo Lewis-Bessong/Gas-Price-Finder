@@ -32,36 +32,36 @@ cout << "The Gas Price Difference is : " << Shell.GasPriceDifference << endl;
 //Exxon
 
 GasBrands Exxon;
-Exxon.CurrentGasPrice = 2.70;
-Exxon.PreviousGasPrice = 2.80;
+Exxon.CurrentGasPrice = 2.68;
+Exxon.PreviousGasPrice = 2.78;
 Exxon.GasPriceDifference = Exxon.CurrentGasPrice - Exxon.PreviousGasPrice;
 
 //Mobil
 
 GasBrands Mobil;
-Mobil.CurrentGasPrice = 2.70;
-Mobil.PreviousGasPrice = 2.80;
+Mobil.CurrentGasPrice = 2.68;
+Mobil.PreviousGasPrice = 2.78;
 Mobil.GasPriceDifference = Mobil.CurrentGasPrice - Mobil.PreviousGasPrice;
 
 //Chevron
 
 GasBrands Chevron;
-Chevron.CurrentGasPrice = 2.70;
-Chevron.PreviousGasPrice = 2.80;
+Chevron.CurrentGasPrice = 2.75;
+Chevron.PreviousGasPrice = 2.85;
 Chevron.GasPriceDifference = Chevron.CurrentGasPrice - Chevron.PreviousGasPrice;
 
 //Chevron w/ texaco
 
 GasBrands ChevTex;
-ChevTex.CurrentGasPrice = 2.70;
-ChevTex.PreviousGasPrice = 2.80;
+ChevTex.CurrentGasPrice = 2.74;
+ChevTex.PreviousGasPrice = 2.83;
 ChevTex.GasPriceDifference = ChevTex.CurrentGasPrice - ChevTex.PreviousGasPrice;
 
 // BP
 
 GasBrands BP;
-BP.CurrentGasPrice = 2.70;
-BP.PreviousGasPrice = 2.80;
+BP.CurrentGasPrice = 2.69;
+BP.PreviousGasPrice = 2.79;
 BP.GasPriceDifference = BP.CurrentGasPrice - BP.PreviousGasPrice;
 
 
