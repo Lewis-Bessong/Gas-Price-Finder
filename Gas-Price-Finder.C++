@@ -6,8 +6,9 @@ using namespace std;
 class GasBrands {
     public: 
 
-        string CurrentGasPrice;
-        string PreviousGasPrice;
+        float CurrentGasPrice;
+        float PreviousGasPrice;
+
     
 
 };
@@ -17,11 +18,11 @@ int main () {
 // Shell 
 
 GasBrands Shell;
-Shell.CurrentGasPrice = "$2.60 - $2.75";
-Shell.PreviousGasPrice = "2.60 - 2.70";
+Shell.CurrentGasPrice = 2.70;
+Shell.PreviousGasPrice = 2.80;
 
-cout << "Shells Current Gas Price is : " << Shell.CurrentGasPrice << " Per Gallon" << endl;
-cout << "Shells Previous Gas Price is : " << Shell.PreviousGasPrice << " Per Gallon" << endl;
+cout << "Shells Avg. Current Gas Price is : $" << Shell.CurrentGasPrice << "/gal" << endl;
+cout << "Shells Avg. Previous Gas Price was: " << Shell.PreviousGasPrice << "/gal" << endl;
 
     return 0;
 }
