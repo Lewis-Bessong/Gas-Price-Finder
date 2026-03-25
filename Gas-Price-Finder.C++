@@ -68,7 +68,7 @@ BP.GasPriceDifference = BP.CurrentGasPrice - BP.PreviousGasPrice;
     return 0;
 }
 
-// Output above has to be deleted later, was jsut used for testing and workign with classes
+
 
 
 
