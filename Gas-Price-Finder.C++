@@ -22,12 +22,6 @@ Shell.CurrentGasPrice = 2.70;
 Shell.PreviousGasPrice = 2.80;
 Shell.GasPriceDifference = Shell.CurrentGasPrice - Shell.PreviousGasPrice;
 
-// Add logic for gasprice difference here, if GPD is < 0 then print .... if else ....
-
-cout << "Shells Current Gas Price Avg. is : $" << Shell.CurrentGasPrice << "/gal" << endl;
-cout << "Shells Previous Gas Price Avg. was: " << Shell.PreviousGasPrice << "/gal" << endl;
-
-cout << "The Gas Price Difference is : " << Shell.GasPriceDifference << endl;
 
 //Exxon
 
@@ -63,6 +57,8 @@ GasBrands BP;
 BP.CurrentGasPrice = 2.69;
 BP.PreviousGasPrice = 2.79;
 BP.GasPriceDifference = BP.CurrentGasPrice - BP.PreviousGasPrice;
+
+cout << "BP's gas difference is : " << BP.GasPriceDifference << endl;
 
 
     return 0;
