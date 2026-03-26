@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string> // tools for strings
 #include <iomanip> // controls how numbers look when printed (like formatting, it stops raw repeatable numbers) 
+#include <vector>
+
 
 using namespace std;
 
@@ -85,10 +87,16 @@ cout << fixed << setprecision(2);
 
 // === SYSTEM/LOGIC START ====
 
+
 SystemOutput();
 
-cout << "Current Year   |   Previous Year   |   Difference\n";
-cout << "-------------------------------------------------\n";
+// if conditionals or loops for user input
+
+
+
+// cout << "Current Year   |   Previous Year   |   Difference\n";
+// cout << "---------------|-------------------|-------------\n";
+// cout << 
 
 
 
@@ -127,9 +135,9 @@ Things I might need
 . if loop
 . class
 
-When I want done
+Notes
 
-3/25/2026
+. brainstorm idea for using vector, class, and comaprison chart with user input
 
 */
 
