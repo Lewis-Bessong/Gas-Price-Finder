@@ -14,6 +14,24 @@ class GasBrands { // data storage system i can use to save data for each brand
 
 };
 
+void SystemOutput() {
+
+    cout << "Welcome to the Gas Price Finder!\n\n";
+
+    cout << "These Are The Gas Station Brands We Have Data For Currently." << endl; // flushes out buffer
+    cout << "* Shell\n";
+    cout << "* Exxon\n";
+    cout << "* Mobil\n";
+    cout << "* Chevron\n";
+    cout << "* ChevTex (Chevron w/ Texaco)\n";
+    cout << "* BP" << endl;
+
+    string UsersChoice;
+    cout << "\n\nWhat Gas Station Brand Do You Chose: "; 
+    cin >> UsersChoice;
+
+};
+
 
 int main () {
 
@@ -65,21 +83,17 @@ BP.PreviousGasPrice = 2.79;
 BP.GasPriceDifference = BP.CurrentGasPrice - BP.PreviousGasPrice;
 cout << fixed << setprecision(2); 
 
-// === User
+// === SYSTEM/LOGIC START ====
 
-cout << "Welcome to the Gas Price Finder!\n\n";
+SystemOutput();
 
-cout << "These Are The Gas Station Brands We Have Data For Currently." << endl; // flushes out buffer
-cout << "* Shell\n";
-cout << "* Exxon\n";
-cout << "* Mobil\n";
-cout << "* Chevron\n";
-cout << "* ChevTex (Chevron w/ Texaco)\n";
-cout << "* BP" << endl;
+cout << "Current Year   |   Previous Year   |   Difference\n";
+cout << "-------------------------------------------------\n";
 
-string UsersChoice;
-cout << "\n\nWhat Gas Station Brand Do You Chose: "; 
-cin >> UsersChoice;
+
+
+
+
 
 
 
