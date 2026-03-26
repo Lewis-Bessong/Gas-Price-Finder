@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <iomanip> // controls how numbers look when printed (like formatting, it stops raw repeatable numbers) 
 
 using namespace std;
 
@@ -58,6 +59,7 @@ BP.CurrentGasPrice = 2.69;
 BP.PreviousGasPrice = 2.79;
 BP.GasPriceDifference = BP.CurrentGasPrice - BP.PreviousGasPrice;
 
+cout << fixed << setprecision(2); // shows only 2 digits after decimal place
 cout << "BP's gas difference is : " << BP.GasPriceDifference << endl;
 
 
