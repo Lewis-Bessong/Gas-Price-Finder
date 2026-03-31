@@ -6,19 +6,6 @@
 
 using namespace std;
 
-class GasBrands { // data storage system i can use to save data for each brand
-    public: 
-
-        float CurrentGasPrice; 
-        float PreviousGasPrice; 
-        float GasPriceDifference; // variable for when I subtract both years. 
-
-
-
-    
-
-};
-
 vector <string>GasStationBrand = {"Shell", "Exxon", "Mobil", "Chevron", "ChevTex", "BP"};
 
 void SystemOutput() {
@@ -42,7 +29,7 @@ void SystemOutput() {
 
 void SystemBoard() {
 
-cout << "       |       |       " << endl; 
+cout << "       |       |       " << endl;
 // where to put header titles like (Current gas and past gas)
 cout << "_______|_______|_______" << endl;
 cout << "       |       |       " << endl;
@@ -50,69 +37,32 @@ cout << "       |       |       " << endl;
 
 }
 
+class GasPriceFinder { // blueprint for the system of GPF 
+    public:
+        // Attributes (Data/Variables)
+        float CurrentYrGas;
+        float LastYrGas; 
+        float GasYrsDifference; 
 
+        //Method (Actions/Functions)
+        void DifferenceSolver() {
+
+        }
+        
+
+    private:
+
+
+
+
+};
 
 
 
 int main () {
-
-// Shell 
-
-GasBrands Shell;
-Shell.CurrentGasPrice = 2.70;
-Shell.PreviousGasPrice = 2.80;
-Shell.GasPriceDifference = Shell.CurrentGasPrice - Shell.PreviousGasPrice;
-cout << fixed << setprecision(2); // shows only 2 digits after decimal place
-
-//Exxon
-
-GasBrands Exxon;
-Exxon.CurrentGasPrice = 2.68;
-Exxon.PreviousGasPrice = 2.78;
-Exxon.GasPriceDifference = Exxon.CurrentGasPrice - Exxon.PreviousGasPrice;
-cout << fixed << setprecision(2);
-
-//Mobil
-
-GasBrands Mobil;
-Mobil.CurrentGasPrice = 2.68;
-Mobil.PreviousGasPrice = 2.78;
-Mobil.GasPriceDifference = Mobil.CurrentGasPrice - Mobil.PreviousGasPrice;
-cout << fixed << setprecision(2);
-
-//Chevron
-
-GasBrands Chevron;
-Chevron.CurrentGasPrice = 2.75;
-Chevron.PreviousGasPrice = 2.85;
-Chevron.GasPriceDifference = Chevron.CurrentGasPrice - Chevron.PreviousGasPrice;
-cout << fixed << setprecision(2); 
-
-//Chevron w/ texaco
-
-GasBrands ChevTex;
-ChevTex.CurrentGasPrice = 2.74;
-ChevTex.PreviousGasPrice = 2.83;
-ChevTex.GasPriceDifference = ChevTex.CurrentGasPrice - ChevTex.PreviousGasPrice;
-cout << fixed << setprecision(2);
-
-// BP
-
-GasBrands BP;
-BP.CurrentGasPrice = 2.69;
-BP.PreviousGasPrice = 2.79;
-BP.GasPriceDifference = BP.CurrentGasPrice - BP.PreviousGasPrice;
-cout << fixed << setprecision(2); 
-
 // === SYSTEM/LOGIC START ====
 
-
 SystemBoard();
-
-// Find out way to use vector as comparision chart and create it with a class.
-
-
-
 
 
 
