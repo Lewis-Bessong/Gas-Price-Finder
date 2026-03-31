@@ -94,6 +94,12 @@ SystemOutput();
 
 
 
+// Thinking of idea of using vector/array to store brands and find out way on how to display system
+
+//Vector (resizeable0)
+
+//array (fixed size)
+
  
 
 
