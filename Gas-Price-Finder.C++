@@ -26,18 +26,29 @@ void SystemOutput() {
     cout << "Welcome to the Gas Price Finder!\n\n";
 
     cout << "These Are The Gas Station Brands We Have Data For Currently." << endl; // flushes out buffer
-    cout << "*" << GasStationBrand.at(0) << "\n"; // shell
-    cout << "*" << GasStationBrand.at(1) << "\n"; // exxon
-    cout << "*" << GasStationBrand.at(2) << "\n"; // Mobil
-    cout << "*" << GasStationBrand.at(3) << "\n"; // chevron 
-    cout << "*" << GasStationBrand.at(4) << "\n"; // Chev tex
-    cout << "*" << GasStationBrand.at(5) << "\n"; // BP 
+
+    cout << "*" << GasStationBrand.at(0) << endl; // shell
+    cout << "*" << GasStationBrand.at(1) << endl; // exxon
+    cout << "*" << GasStationBrand.at(2) << endl; // Mobil
+    cout << "*" << GasStationBrand.at(3) << endl; // chevron 
+    cout << "*" << GasStationBrand.at(4) << endl; // Chev tex
+    cout << "*" << GasStationBrand.at(5) << endl; // BP 
 
     string UsersChoice;
     cout << "\n\nWhat Gas Station Brand Do You Chose: "; 
     cin >> UsersChoice;
 
 };
+
+void SystemBoard() {
+
+cout << "       |       |       " << endl; 
+// where to put header titles like (Current gas and past gas)
+cout << "_______|_______|_______" << endl;
+cout << "       |       |       " << endl;
+cout << "       |       |       " << endl;
+
+}
 
 
 
@@ -96,7 +107,7 @@ cout << fixed << setprecision(2);
 // === SYSTEM/LOGIC START ====
 
 
-SystemOutput();
+SystemBoard();
 
 // Find out way to use vector as comparision chart and create it with a class.
 
