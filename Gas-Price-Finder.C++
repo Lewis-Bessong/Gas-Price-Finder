@@ -19,17 +19,19 @@ class GasBrands { // data storage system i can use to save data for each brand
 
 };
 
+vector <string>GasStationBrand = {"Shell", "Exxon", "Mobil", "Chevron", "ChevTex", "BP"};
+
 void SystemOutput() {
 
     cout << "Welcome to the Gas Price Finder!\n\n";
 
     cout << "These Are The Gas Station Brands We Have Data For Currently." << endl; // flushes out buffer
-    cout << "* Shell\n";
-    cout << "* Exxon\n";
-    cout << "* Mobil\n";
-    cout << "* Chevron\n";
-    cout << "* ChevTex (Chevron w/ Texaco)\n";
-    cout << "* BP" << endl;
+    cout << "*" << GasStationBrand.at(0) << "\n"; // shell
+    cout << "*" << GasStationBrand.at(1) << "\n"; // exxon
+    cout << "*" << GasStationBrand.at(2) << "\n"; // Mobil
+    cout << "*" << GasStationBrand.at(3) << "\n"; // chevron 
+    cout << "*" << GasStationBrand.at(4) << "\n"; // Chev tex
+    cout << "*" << GasStationBrand.at(5) << "\n"; // BP 
 
     string UsersChoice;
     cout << "\n\nWhat Gas Station Brand Do You Chose: "; 
@@ -37,7 +39,9 @@ void SystemOutput() {
 
 };
 
-vector <string>GasStationBrands = {"Shell", "Exxon", "Mobil", "Chevron", "ChevTex", "BP"};
+
+
+
 
 int main () {
 
