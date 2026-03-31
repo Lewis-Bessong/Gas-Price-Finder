@@ -35,6 +35,7 @@ void SystemOutput() {
 };
 
 
+
 int main () {
 
 // Shell 
@@ -90,17 +91,7 @@ cout << fixed << setprecision(2);
 
 SystemOutput();
 
-// if conditionals or loops for user input
-
-
-
-// Thinking of idea of using vector/array to store brands and find out way on how to display system
-
-//Vector (resizeable0)
-
-//array (fixed size)
-
- 
+// Find out way to use vector as comparision chart and create it with a class.
 
 
 
