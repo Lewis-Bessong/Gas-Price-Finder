@@ -12,6 +12,9 @@ class GasBrands { // data storage system i can use to save data for each brand
         float CurrentGasPrice; 
         float PreviousGasPrice; 
         float GasPriceDifference; // variable for when I subtract both years. 
+
+
+
     
 
 };
@@ -34,7 +37,7 @@ void SystemOutput() {
 
 };
 
-
+vector <string>GasStationBrands = {"Shell", "Exxon", "Mobil", "Chevron", "ChevTex", "BP"};
 
 int main () {
 
