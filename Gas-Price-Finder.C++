@@ -21,31 +21,39 @@ void SystemOutput() {
     cout << "*" << GasStationBrand.at(4) << endl; // Chev tex
     cout << "*" << GasStationBrand.at(5) << endl; // BP 
 
-    string UsersChoice;
-    cout << "\n\nWhat Gas Station Brand Do You Chose: "; 
-    cin >> UsersChoice;
-
 };
 
 void SystemBoard() {
 
-cout << "       |       |       " << endl;
-// where to put header titles like (Current gas and past gas)
-cout << "_______|_______|_______" << endl;
-cout << "       |       |       " << endl;
-cout << "       |       |       " << endl;
+cout << "           |           |           " << endl;
+cout << "___________|___________|___________" << endl;
+cout << "           |           |           " << endl;
+cout << "           |           |           " << endl;
 
 }
 
 class GasPriceFinder { // blueprint for the system of GPF 
     public:
         // Attributes (Data/Variables)
+        string GasStationName;
         float CurrentYrGas;
-        float LastYrGas; 
-        float GasYrsDifference; 
+        float LastYrGas;      
+        float GasYrsDifference;
 
         //Method (Actions/Functions)
-        void DifferenceSolver() {
+        void GasAnalysis() {
+
+            if (CurrentYrGas < LastYrGas){ // less than
+
+                cout << "The current year gas price is less than last years gas price." << endl;
+
+            } else if (CurrentYrGas > LastYrGas){ // greater than
+
+                cout << "The current year gas price is greater than last years gas price ." << endl;
+            } else { // equal
+
+                cout << " The current year gas is the same as last years gas price." << endl;
+            }
 
         }
         
@@ -62,7 +70,8 @@ class GasPriceFinder { // blueprint for the system of GPF
 int main () {
 // === SYSTEM/LOGIC START ====
 
-SystemBoard();
+//Exxon
+
 
 
 
