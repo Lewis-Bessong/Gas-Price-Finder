@@ -4,12 +4,12 @@ The Gas Price finder is a logic system/database intended for an app that helps u
 
 # Features
 - Input gas stations name
-- Enter current year and last years prices
+- Show current year and last years prices
 - Show comparision of both years
 - Ask user for other brands
 
 # How its used
-The user inputs a gas station brand that they want to know the price of then the system shows the user the brands current year price and past year gas price. Then the system compares the prices and ask for any other station.
+The user inputs a gas station brand that they want based on what gas brand is on file, then the system shows the user the brands current year price and past year gas price. Then the system compares the prices and ask for any other gas brand station.
 
 # Technologies used
 - C++
@@ -20,6 +20,7 @@ The user inputs a gas station brand that they want to know the price of then the
 - Location based prices
 - Desiel prices and comparisions
 - Suggestion system
+- Board Display
 
 # Creator
 Lewis Bessong (LewisTheLogician)
