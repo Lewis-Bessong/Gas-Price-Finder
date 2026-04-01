@@ -10,7 +10,7 @@ vector <string>GasStationBrand = {"Shell", "Exxon", "Mobil", "Chevron", "ChevTex
 
 void SystemOutput() {
 
-    cout << "Welcome to the Gas Price Finder!\n\n";
+    cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
 
     cout << "This is the Gas Prices of Exxon In Texas.\n"; // flushes out buffer
     /*
@@ -25,10 +25,10 @@ void SystemOutput() {
 
 void SystemBoard() {
 
-cout << "           |           |           " << endl;
-cout << "___________|___________|___________" << endl;
-cout << "           |           |           " << endl;
-cout << "           |           |           " << endl;
+    cout << "           |           |           " << endl;
+    cout << "___________|___________|___________" << endl;
+    cout << "           |           |           " << endl;
+    cout << "           |           |           " << endl;
 
 }
 
@@ -55,13 +55,8 @@ class GasPriceFinder { // blueprint for the system of GPF
                 cout << " The avg. current year gas is the same as last years avg. gas price." << endl;
             }
 
+
         }
-        
-
-    private:
-
-
-
 
 };
 
@@ -69,19 +64,41 @@ class GasPriceFinder { // blueprint for the system of GPF
 
 int main () {
 // === SYSTEM/LOGIC START ====
+SystemOutput();
 
 //Exxon
 GasPriceFinder Exxon;
-
 Exxon.GasStationName = "Exxon";
-Exxon.CurrentYrGas = 3.40;
-Exxon.LastYrGas = 2.75;
+Exxon.CurrentYrGas = 3.30;
+Exxon.LastYrGas = 2.70;
 
-Exxon.GasAnalysis();
+// Shell
 
+GasPriceFinder Shell;
+Shell.GasStationName = "Shell";
+Shell.CurrentYrGas = 3.40;
+Shell.LastYrGas = 2.75;
 
+//chevron
 
+GasPriceFinder Chevron;
+Shell.GasStationName = "Chevron";
+Shell.CurrentYrGas = 3.45;
+Shell.LastYrGas = 2.80;
 
+// Texaco w/ Chevron
+
+GasPriceFinder ChevTex;
+Shell.GasStationName = "ChevTex";
+Shell.CurrentYrGas = 3.40;
+Shell.LastYrGas = 2.70;
+
+//bp
+
+GasPriceFinder BP;
+Shell.GasStationName = "BP";
+Shell.CurrentYrGas = 3.25;
+Shell.LastYrGas = 2.65;
 
     return 0;
 }
