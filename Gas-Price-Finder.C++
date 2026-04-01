@@ -3,14 +3,13 @@
 #include <iomanip> // controls how numbers look when printed (like formatting, it stops raw repeatable numbers) 
 #include <vector>
 
-using namespace std;
-
+using namespace std;    
 
 class GasPriceFinder { // blueprint for the system of GPF 
     public:
         // Attributes (Data/Variables)
 
-        
+        string PlayerChocie; 
         string GasStationName;
         double CurrentYrGas;
         double LastYrGas;      
@@ -33,75 +32,72 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }
 
-        void PlayerChocieLogic() { // Logic towards players gas chocie
+        void SystemOutput() { // what the user sees
 
+            cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n\n";
+
+            cout << "These Are The Gas Brands That We Have Currently.\n\n";
+    
+            cout << "* Shell\n"; // shell
+            cout << "* Exxon\n" ; // exxon
+            cout << "* Mobil\n"; // Mobil
+            cout << "* Chevron\n"; // chevron 
+            cout << "* Chev Tex\n"; // Chev tex
+            cout << "* BP" << endl; // BP 
+
+            cout << "\nWhat Do You Chose? : ";
+            cin >> PlayerChocie;
+
+        }   
+ 
+        void PlayerChocieLogic() {
+            
 
         }
-  
 
     private:
-
-        vector <string>GasStationBrand = {"Shell", "Exxon", "Mobil", "Chevron", "ChevTex", "BP"};
         
 
 };
 
-vector <string>GasStationBrand = {"Shell", "Exxon", "Mobil", "Chevron", "ChevTex", "BP"};
-
-void SystemOutput() {
-
-    cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
-
-    cout << "These Are The Gas Brands That We Have Currently.\n"; // flushes out buffer
-    
-    cout << "*" << GasStationBrand.at(0) << endl; // shell
-    cout << "*" << GasStationBrand.at(1) << endl; // exxon
-    cout << "*" << GasStationBrand.at(2) << endl; // Mobil
-    cout << "*" << GasStationBrand.at(3) << endl; // chevron 
-    cout << "*" << GasStationBrand.at(4) << endl; // Chev tex
-    cout << "*" << GasStationBrand.at(5) << endl; // BP 
-
-    string PlayerChoice;
-    cout << "Which Brand Do You Chose? : ";
-    cin >> PlayerChoice;
-    }
-
-
 
 int main () {
-// === SYSTEM/LOGIC START ====
+    
+    //Exxon
+    GasPriceFinder Exxon;
+    Exxon.GasStationName = "Exxon";
+    Exxon.CurrentYrGas = 3.30;
+    Exxon.LastYrGas = 2.70;
 
-SystemOutput();
+    // Shell
+    GasPriceFinder Shell;
+    Shell.GasStationName = "Shell";
+    Shell.CurrentYrGas = 3.40;
+    Shell.LastYrGas = 2.75;
 
-//Exxon
-GasPriceFinder Exxon;
-Exxon.GasStationName = "Exxon";
-Exxon.CurrentYrGas = 3.30;
-Exxon.LastYrGas = 2.70;
+    //chevron
+    GasPriceFinder Chevron;
+    Chevron.GasStationName = "Chevron";
+    Chevron.CurrentYrGas = 3.45;
+    Chevron.LastYrGas = 2.80;
 
-// Shell
-GasPriceFinder Shell;
-Shell.GasStationName = "Shell";
-Shell.CurrentYrGas = 3.40;
-Shell.LastYrGas = 2.75;
+    // Texaco w/ Chevron
+    GasPriceFinder ChevTex;
+    ChevTex.GasStationName = "ChevTex";
+    ChevTex.CurrentYrGas = 3.40;
+    ChevTex.LastYrGas = 2.70;
 
-//chevron
-GasPriceFinder Chevron;
-Shell.GasStationName = "Chevron";
-Shell.CurrentYrGas = 3.45;
-Shell.LastYrGas = 2.80;
+    //bp
+    GasPriceFinder BP;
+    BP.GasStationName = "BP";
+    BP.CurrentYrGas = 3.25;
+    BP.LastYrGas = 2.65;
 
-// Texaco w/ Chevron
-GasPriceFinder ChevTex;
-Shell.GasStationName = "ChevTex";
-Shell.CurrentYrGas = 3.40;
-Shell.LastYrGas = 2.70;
+    // For Method calling within the class
+    GasPriceFinder gpf; 
 
-//bp
-GasPriceFinder BP;
-Shell.GasStationName = "BP";
-Shell.CurrentYrGas = 3.25;
-Shell.LastYrGas = 2.65;
+    // === SYSTEM OUTPUT ===
+    gpf.SystemOutput(); // for void inside class 
 
     return 0;
 }
