@@ -38,12 +38,12 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             cout << "These Are The Gas Brands That We Have Currently.\n\n";
     
-            cout << "* Shell\n"; // shell
-            cout << "* Exxon\n" ; // exxon
-            cout << "* Mobil\n"; // Mobil
-            cout << "* Chevron\n"; // chevron 
-            cout << "* Chev Tex\n"; // Chev tex
-            cout << "* BP" << endl; // BP 
+            cout << "1. Shell\n"; // shell
+            cout << "2. Exxon\n" ; // exxon
+            cout << "3. Mobil\n"; // Mobil
+            cout << "4. Chevron\n"; // chevron 
+            cout << "5. Chev Tex\n"; // Chev tex
+            cout << "6. BP" << endl; // BP 
 
             cout << "\nWhat Do You Chose? : ";
             cin >> PlayerChocie;
@@ -51,12 +51,23 @@ class GasPriceFinder { // blueprint for the system of GPF
         }   
  
         void PlayerChocieLogic() {
-            
+
+            if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
+
+                cout << "\nLoading Shell Data...." << endl;
+            } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
+
+                cout << "\nLoading Exxon Data...." << endl;
+            } else {
+
+                cout << "\nInvalid" << endl;
+            }
 
         }
 
     private:
         
+        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"};
 
 };
 
@@ -97,7 +108,8 @@ int main () {
     GasPriceFinder gpf; 
 
     // === SYSTEM OUTPUT ===
-    gpf.SystemOutput(); // for void inside class 
+    gpf.SystemOutput(); // void inside class
+    gpf.PlayerChocieLogic(); // void inside class
 
     return 0;
 }
