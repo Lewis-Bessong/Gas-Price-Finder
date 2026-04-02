@@ -53,14 +53,26 @@ class GasPriceFinder { // blueprint for the system of GPF
         void PlayerChocieLogic() {
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
-
                 cout << "\nLoading Shell Data...." << endl;
+
             } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
-
                 cout << "\nLoading Exxon Data...." << endl;
-            } else {
 
-                cout << "\nInvalid" << endl;
+            } else if (PlayerChocie == GasNumber.at(2)) { //conditional for Mobil (vector 2)
+                cout << "\nLoading Mobil Data...." << endl; 
+
+            } else if (PlayerChocie == GasNumber.at(3)) { //conditional for Chevron (vector 3)
+                cout << "\nLoading Chevron Data...." << endl;
+
+            } else if (PlayerChocie == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
+                cout << "\nLoading Chev Tex Data...." << endl;
+
+            } else if (PlayerChocie == GasNumber.at(5)) { //conditional for BP (vector 5)
+                cout << "\nLoading BP Data...." << endl;
+
+            } else { // conditional for any other input by user 
+                cout << "\nInvlaid Input." << endl;
+
             }
 
         }
