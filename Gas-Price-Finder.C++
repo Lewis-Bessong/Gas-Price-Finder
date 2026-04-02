@@ -34,8 +34,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         void SystemOutput() { // what the user sees
 
-            cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n\n";
-
+            cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
             cout << "These Are The Gas Brands That We Have Currently.\n\n";
     
             cout << "1. Shell\n"; // shell
