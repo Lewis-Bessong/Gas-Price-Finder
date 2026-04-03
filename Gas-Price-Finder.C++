@@ -79,7 +79,7 @@ class GasPriceFinder { // blueprint for the system of GPF
         }
 
         void ShellOverall () {
-            
+
 
         }
 
@@ -88,6 +88,8 @@ class GasPriceFinder { // blueprint for the system of GPF
         vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"};
         
         // Nested Class for printing gas brand outputs in public class of Gas PRice Finder 
+
+        /*
         class ShellGasBrand {
             public:
                 
@@ -101,7 +103,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             private:
                 
         };
-        
+        */
         
         
 
@@ -109,11 +111,15 @@ class GasPriceFinder { // blueprint for the system of GPF
 
 class ShellGasBrand {
     public:
+                
+        void Data() {
 
+            cout << "This is Shell Data." << endl;
+
+        }
 
     private:
-        
-
+                
 };
 
 
@@ -127,7 +133,6 @@ int main () {
 
     // Shell
     GasPriceFinder Shell;
-    ShellGasBrand sgb; // Object for nested class
     Shell.GasStationName = "Shell";
     Shell.CurrentYrGas = 3.40;
     Shell.LastYrGas = 2.75;
@@ -152,6 +157,7 @@ int main () {
 
     // For Method calling within the class
     GasPriceFinder gpf; 
+    ShellGasBrand sgb; // Object for nested class
 
     // === SYSTEM OUTPUT ===
     gpf.SystemOutput(); // void inside class
@@ -189,7 +195,8 @@ Things I might need
 
 Notes
 
-. brainstorm idea for using vector, class, and comaprison chart with user input
+. Find out way to improve the if conditonal within Gas Price finder class, find out way to sue nested class efficiently
+.
 
 */
 
