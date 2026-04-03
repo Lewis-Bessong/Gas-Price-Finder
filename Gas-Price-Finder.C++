@@ -53,6 +53,8 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
                 cout << "\nLoading Shell Data...." << endl;
+ 
+                ExxonBrand.ExxonData(); 
 
             } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
                 cout << "\nLoading Exxon Data...." << endl;
@@ -79,6 +81,20 @@ class GasPriceFinder { // blueprint for the system of GPF
     private:
         
         vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"};
+        Exxon ExxonBrand;
+        
+
+};
+
+class Exxon {
+    public:
+        void ExxonData () {
+
+            cout << "Current Year Avg. Gas Price: " << Exxon.CurrentYrGas << "/gallon" << endl;
+
+        }
+    private:
+        GasPriceFinder Exxon;
 
 };
 
