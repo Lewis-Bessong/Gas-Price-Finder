@@ -53,6 +53,8 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
                 cout << "\nLoading Shell Data...." << endl;
+
+                ShellGasBrand data();
  
             } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
                 cout << "\nLoading Exxon Data...." << endl;
@@ -80,7 +82,18 @@ class GasPriceFinder { // blueprint for the system of GPF
         
         vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"};
         
-        // Nested Class for printing gas brand outputs
+        // Nested Class for printing gas brand outputs in public class of Gas PRice Finder 
+        class ShellGasBrand {
+            public:
+                void Data() {
+
+                    cout << "This is Shell Data." << endl;
+
+                }
+
+            private:
+                
+        };
         
         
         
