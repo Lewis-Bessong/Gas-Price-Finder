@@ -88,7 +88,8 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
 
-                Shell.GasInfo();
+                cout << "\nCurrent Year Avg. Gas Price: " << Shell.CurrentYrGas << "/gallon\n";
+                cout << "Last Year Avg. Gas Price: " << Shell.LastYrGas << "/gallon\n";
 
             } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
                 
@@ -233,7 +234,6 @@ int main () {
 
     //chevron
     GasPriceFinder Chevron;
-    
 
     // Texaco w/ Chevron
     GasPriceFinder ChevTex;
