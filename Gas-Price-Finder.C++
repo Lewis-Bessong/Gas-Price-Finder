@@ -125,22 +125,22 @@ class GasPriceFinder { // blueprint for the system of GPF
 
     private: // non accesible
         
-        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method)
+        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method), 1(0) being Shell
 
-        // Nested Class's For Gas Station info
+        // Nested Class's For Each Gas Station info
 
         class ShellInfo {
             public:
 
+                // Attributes  
                 string PlayerChocie; 
                 string GasStationName;
                 double CurrentYrGas;
                 double LastYrGas;      
                 double GasYrsDifference;
 
+                // Methods
                 void GasInfo() {
-
-                    cout << "Shell Info";
 
                 }
 
@@ -149,15 +149,16 @@ class GasPriceFinder { // blueprint for the system of GPF
         class ExxonInfo {
             public:
 
+                // Attributes
                 string PlayerChocie; 
                 string GasStationName;
                 double CurrentYrGas;
                 double LastYrGas;      
                 double GasYrsDifference;
 
+                // Methods
                 void GasInfo() {
 
-                    cout << "Exxon Info" << endl;
                 }
 
         };
@@ -165,15 +166,16 @@ class GasPriceFinder { // blueprint for the system of GPF
         class MobilInfo {
             public:
 
+                // Attributes
                 string PlayerChocie; 
                 string GasStationName;
                 double CurrentYrGas;
                 double LastYrGas;      
                 double GasYrsDifference;
 
+                // Methods
                 void GasInfo() {
 
-                    cout << "Mobil Info " << endl;
                 }
 
         };
@@ -181,15 +183,16 @@ class GasPriceFinder { // blueprint for the system of GPF
         class ChevronInfo {
             public:
 
+                // Attributes
                 string PlayerChocie; 
                 string GasStationName;
                 double CurrentYrGas;
                 double LastYrGas;      
                 double GasYrsDifference;
-
+            
+                // Methods
                 void GasInfo() {
 
-                    cout << "Chevron Info" << endl;
                 }
 
         };
@@ -197,15 +200,16 @@ class GasPriceFinder { // blueprint for the system of GPF
         class ChevTexInfo {
             public:
 
+                // Attributes
                 string PlayerChocie; 
                 string GasStationName;
                 double CurrentYrGas;
                 double LastYrGas;      
                 double GasYrsDifference;
 
+                // Methods
                 void GasInfo() {
 
-                    cout << "Chev Tex Info." << endl;
                 }
 
         };
@@ -213,15 +217,16 @@ class GasPriceFinder { // blueprint for the system of GPF
         class BPInfo {
             public:
 
+                // Attributes
                 string PlayerChocie; 
                 string GasStationName;
                 double CurrentYrGas;
                 double LastYrGas;      
                 double GasYrsDifference;
 
+                // Methods
                 void GasInfo() {
 
-                    cout << "BP Info" << endl;
                 }
 
         };
@@ -229,22 +234,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 };
 
 
-int main () {
-    
-    //Exxon
-    GasPriceFinder Exxon;
-
-    // Shell
-    GasPriceFinder Shell;
-
-    //chevron
-    GasPriceFinder Chevron;
-
-    // Texaco w/ Chevron
-    GasPriceFinder ChevTex;
-
-    //bp
-    GasPriceFinder BP;
+int main () { // Where All code will run
 
     // For Method calling within the class
     GasPriceFinder gpf;
@@ -257,15 +247,6 @@ int main () {
 }
 
 
-
-
-
-
-
-
-
-
-
 /*
 
 GPF Plan 
@@ -273,16 +254,15 @@ GPF Plan
 1. ask question
 2. user inputs brand (invalid features)
 3. system takes info from already made info of brand
-4. displays info in a t chart/ board
+4. displays info in a t chart/ board (future)
 
 TODO:
 
-1. find way to display gas data when user inputs chocie (Almsot Done, maybe has to do with voids and nested class)
-2. Implement objects for nested class into PlayerChocieLogic void
-3. Make Sure Code is understandable and readable (Better comments, better layout, ect.)
+1. Find out plan for Gas Difference within code
+2. Logic for doing gas difference
+3. Figure something out for voids inside each nested class
 
 */
-
 
 
 /*
