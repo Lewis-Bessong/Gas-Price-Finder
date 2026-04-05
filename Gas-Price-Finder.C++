@@ -53,21 +53,36 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             //Objects For Nested Class Shell
             ShellInfo Shell;
+            Shell.GasStationName = "Shell";
+            Shell.CurrentYrGas = 3.40;
+            Shell.LastYrGas = 2.75;
             
             //Objects for Nested Class Exxon
-            ExxonInfo Exxon; 
+            ExxonInfo Exxon;
+            Exxon.GasStationName = "Exxon";
+            Exxon.CurrentYrGas = 3.30;
+            Exxon.LastYrGas = 2.70; 
 
             //Objects for Nested Class Mobil
             MobilInfo Mobil;
 
             //Objects for Nested clas Chevron
-            ChevronInfo Chevron; 
+            ChevronInfo Chevron;
+            Chevron.GasStationName = "Chevron";
+            Chevron.CurrentYrGas = 3.45;
+            Chevron.LastYrGas = 2.80; 
 
             //Objects for nested class Chev tex
             ChevTexInfo ChevTex;
+            ChevTex.GasStationName = "ChevTex";
+            ChevTex.CurrentYrGas = 3.40;
+            ChevTex.LastYrGas = 2.70;
 
             //Objects for nested class BP
             BPInfo BP;
+            BP.GasStationName = "BP";
+            BP.CurrentYrGas = 3.25;
+            BP.LastYrGas = 2.65;
             
 
 
@@ -111,6 +126,12 @@ class GasPriceFinder { // blueprint for the system of GPF
         class ShellInfo {
             public:
 
+                string PlayerChocie; 
+                string GasStationName;
+                double CurrentYrGas;
+                double LastYrGas;      
+                double GasYrsDifference;
+
                 void GasInfo() {
 
                     cout << "Shell Info"; 
@@ -122,6 +143,12 @@ class GasPriceFinder { // blueprint for the system of GPF
         class ExxonInfo {
             public:
 
+                string PlayerChocie; 
+                string GasStationName;
+                double CurrentYrGas;
+                double LastYrGas;      
+                double GasYrsDifference;
+
                 void GasInfo() {
 
                     cout << "Exxon Info" << endl;
@@ -131,6 +158,12 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         class MobilInfo {
             public:
+
+                string PlayerChocie; 
+                string GasStationName;
+                double CurrentYrGas;
+                double LastYrGas;      
+                double GasYrsDifference;
 
                 void GasInfo() {
 
@@ -142,6 +175,12 @@ class GasPriceFinder { // blueprint for the system of GPF
         class ChevronInfo {
             public:
 
+                string PlayerChocie; 
+                string GasStationName;
+                double CurrentYrGas;
+                double LastYrGas;      
+                double GasYrsDifference;
+
                 void GasInfo() {
 
                     cout << "Chevron Info" << endl;
@@ -152,6 +191,12 @@ class GasPriceFinder { // blueprint for the system of GPF
         class ChevTexInfo {
             public:
 
+                string PlayerChocie; 
+                string GasStationName;
+                double CurrentYrGas;
+                double LastYrGas;      
+                double GasYrsDifference;
+
                 void GasInfo() {
 
                     cout << "Chev Tex Info." << endl;
@@ -161,6 +206,12 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         class BPInfo {
             public:
+
+                string PlayerChocie; 
+                string GasStationName;
+                double CurrentYrGas;
+                double LastYrGas;      
+                double GasYrsDifference;
 
                 void GasInfo() {
 
@@ -176,33 +227,19 @@ int main () {
     
     //Exxon
     GasPriceFinder Exxon;
-    Exxon.GasStationName = "Exxon";
-    Exxon.CurrentYrGas = 3.30;
-    Exxon.LastYrGas = 2.70;
 
     // Shell
     GasPriceFinder Shell;
-    Shell.GasStationName = "Shell";
-    Shell.CurrentYrGas = 3.40;
-    Shell.LastYrGas = 2.75;
 
     //chevron
     GasPriceFinder Chevron;
-    Chevron.GasStationName = "Chevron";
-    Chevron.CurrentYrGas = 3.45;
-    Chevron.LastYrGas = 2.80;
+    
 
     // Texaco w/ Chevron
     GasPriceFinder ChevTex;
-    ChevTex.GasStationName = "ChevTex";
-    ChevTex.CurrentYrGas = 3.40;
-    ChevTex.LastYrGas = 2.70;
 
     //bp
     GasPriceFinder BP;
-    BP.GasStationName = "BP";
-    BP.CurrentYrGas = 3.25;
-    BP.LastYrGas = 2.65;
 
     // For Method calling within the class
     GasPriceFinder gpf;
