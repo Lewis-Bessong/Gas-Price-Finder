@@ -53,8 +53,6 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
                 cout << "\nLoading Shell Data...." << endl;
-
-                sgb.data();
  
             } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
                 cout << "\nLoading Exxon Data...." << endl;
@@ -78,48 +76,12 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }
 
-        void ShellOverall () { // Draft/possible method for logic only for shell
-
-
-        }
-
     private: // non accesible
         
         vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method)
         
-        // Nested Class for printing gas brand outputs in public class of Gas PRice Finder 
+        // Find better Nested Class here
 
-        /*
-        class ShellGasBrand {
-            public:
-                
-
-                void Data() {
-
-                    cout << "This is Shell Data." << endl;
-
-                }
-
-            private:
-                
-        };
-        */
-        
-        
-
-};
-
-class ShellGasBrand {
-    public:
-                
-        void Data() {
-
-            cout << "This is Shell Data." << endl;
-
-        }
-
-    private:
-                
 };
 
 
@@ -156,8 +118,7 @@ int main () {
     BP.LastYrGas = 2.65;
 
     // For Method calling within the class
-    GasPriceFinder gpf; 
-    ShellGasBrand sgb; // Object for nested class
+    GasPriceFinder gpf;
 
     // === SYSTEM OUTPUT ===
     gpf.SystemOutput(); // void inside class
