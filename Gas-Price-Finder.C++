@@ -134,7 +134,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
                 void GasInfo() {
 
-                    cout << "Shell Info"; 
+                    cout << "Shell Info";
 
                 }
 
@@ -272,8 +272,9 @@ GPF Plan
 
 TODO:
 
-1. find way to display gas data when user inputs chocie
-2. experiment with nested class
+1. find way to display gas data when user inputs chocie (Almsot Done, maybe has to do with voids and nested class)
+2. Implement objects for nested class into PlayerChocieLogic void
+3. Make Sure Code is understandable and readable (Better comments, better layout, ect.)
 
 */
 
