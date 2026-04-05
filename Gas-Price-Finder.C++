@@ -18,21 +18,21 @@ class GasPriceFinder { // blueprint for the system of GPF
         //Method (Actions/Functions)
         void GasAnalysis() { // Text for comaparing 
 
-            if (CurrentYrGas < LastYrGas){ // less than
+            if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
 
                 cout << "The avg. current year gas price is less than last years avg. gas price." << endl;
 
-            } else if (CurrentYrGas > LastYrGas){ // greater than
+            } else if (CurrentYrGas > LastYrGas){ // Current yr gas greater than las yr gas
 
                 cout << "The avg. current year gas price is greater than last years avg. gas price ." << endl;
-            } else { // equal
+            } else { // both years are equal
 
                 cout << " The avg. current year gas is the same as last years avg. gas price." << endl;
             }
 
         }
 
-        void SystemOutput() { // what the user sees
+        void SystemOutput() { // Method for what the user sees
 
             cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
             cout << "These Are The Gas Brands That We Have Currently.\n\n";
@@ -49,7 +49,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }   
  
-        void PlayerChocieLogic() { // Logic when User puts input
+        void PlayerChocieLogic() { // Method for Logic when User puts input
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
                 cout << "\nLoading Shell Data...." << endl;
@@ -78,14 +78,14 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }
 
-        void ShellOverall () {
+        void ShellOverall () { // Draft/possible method for logic only for shell
 
 
         }
 
-    private:
+    private: // non accesible
         
-        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"};
+        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method)
         
         // Nested Class for printing gas brand outputs in public class of Gas PRice Finder 
 
@@ -162,6 +162,8 @@ int main () {
     // === SYSTEM OUTPUT ===
     gpf.SystemOutput(); // void inside class
     gpf.PlayerChocieLogic(); // void inside class
+
+    // 
 
     return 0;
 }
