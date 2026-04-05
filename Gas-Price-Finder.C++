@@ -124,8 +124,6 @@ int main () {
     gpf.SystemOutput(); // void inside class
     gpf.PlayerChocieLogic(); // void inside class
 
-    // 
-
     return 0;
 }
 
@@ -141,25 +139,17 @@ int main () {
 
 /*
 
-GPF Map
+GPF Plan 
 
 1. ask question
 2. user inputs brand (invalid features)
 3. system takes info from already made info of brand
 4. displays info in a t chart/ board
 
-Things I might need 
+TODO:
 
-. Array
-. Vector
-. voids
-. if loop
-. class
-
-Notes
-
-. Find out way to improve the if conditonal within Gas Price finder class, find out way to sue nested class efficiently
-.
+1. find way to display gas data when user inputs chocie
+2. experiment with nested class
 
 */
 
