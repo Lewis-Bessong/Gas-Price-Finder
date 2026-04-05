@@ -88,28 +88,33 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
 
-                cout << "\nCurrent Year Avg. Gas Price: " << Shell.CurrentYrGas << "/gallon\n";
-                cout << "Last Year Avg. Gas Price: " << Shell.LastYrGas << "/gallon\n";
+                cout << "\nCurrent Year Avg. : " << Shell.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg. : " << Shell.LastYrGas << "/gal\n";
 
             } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
                 
-                Exxon.GasInfo();
+                cout << "\nCurrent Year Avg. : " << Exxon.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg. : " << Exxon.LastYrGas << "/gal\n";
 
             } else if (PlayerChocie == GasNumber.at(2)) { //conditional for Mobil (vector 2)
                 
-                Mobil.GasInfo();
+                cout << "\nCurrent Year Avg. : " << Mobil.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg. : " << Mobil.LastYrGas << "/gal\n";
 
             } else if (PlayerChocie == GasNumber.at(3)) { //conditional for Chevron (vector 3)
                 
-                Chevron.GasInfo();
+                cout << "\nCurrent Year Avg. : " << Chevron.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg. : " << Chevron.LastYrGas << "/gal\n";
 
             } else if (PlayerChocie == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
                 
-                ChevTex.GasInfo();
+                cout << "\nCurrent Year Avg. : " << ChevTex.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg. : " << ChevTex.LastYrGas << "/gal\n";
 
             } else if (PlayerChocie == GasNumber.at(5)) { //conditional for BP (vector 5)
                 
-                BP.GasInfo();
+                cout << "\nCurrent Year Avg. : " << BP.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg. : " << BP.LastYrGas << "/gal\n";
 
             } else { // conditional for any other input by user 
                 cout << "\nInvlaid Input." << endl;
