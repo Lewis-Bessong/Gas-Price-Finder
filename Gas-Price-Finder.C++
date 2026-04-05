@@ -51,29 +51,49 @@ class GasPriceFinder { // blueprint for the system of GPF
  
         void PlayerChocieLogic() { // Method for Logic when User puts input\
 
-            // Things For Nested Class Shell
+            //Objects For Nested Class Shell
             ShellInfo Shell;
             
+            //Objects for Nested Class Exxon
+            ExxonInfo Exxon; 
+
+            //Objects for Nested Class Mobil
+            MobilInfo Mobil;
+
+            //Objects for Nested clas Chevron
+            ChevronInfo Chevron; 
+
+            //Objects for nested class Chev tex
+            ChevTexInfo ChevTex;
+
+            //Objects for nested class BP
+            BPInfo BP;
+            
+
 
             if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
-                cout << "\nLoading Shell Data....\n";
 
                 Shell.GasInfo();
 
             } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
-                cout << "\nLoading Exxon Data...." << endl;
+                
+                Exxon.GasInfo();
 
             } else if (PlayerChocie == GasNumber.at(2)) { //conditional for Mobil (vector 2)
-                cout << "\nLoading Mobil Data...." << endl; 
+                
+                Mobil.GasInfo();
 
             } else if (PlayerChocie == GasNumber.at(3)) { //conditional for Chevron (vector 3)
-                cout << "\nLoading Chevron Data...." << endl;
+                
+                Chevron.GasInfo();
 
             } else if (PlayerChocie == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
-                cout << "\nLoading Chev Tex Data...." << endl;
+                
+                ChevTex.GasInfo();
 
             } else if (PlayerChocie == GasNumber.at(5)) { //conditional for BP (vector 5)
-                cout << "\nLoading BP Data...." << endl;
+                
+                BP.GasInfo();
 
             } else { // conditional for any other input by user 
                 cout << "\nInvlaid Input." << endl;
@@ -86,18 +106,66 @@ class GasPriceFinder { // blueprint for the system of GPF
         
         vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method)
 
-        // Find better Nested Class here
+        // Nested Class's For Gas Station info
 
         class ShellInfo {
             public:
 
                 void GasInfo() {
 
-                    cout << "Current Year Gas: yabadoba"; 
+                    cout << "Shell Info"; 
 
                 }
 
+        };
 
+        class ExxonInfo {
+            public:
+
+                void GasInfo() {
+
+                    cout << "Exxon Info" << endl;
+                }
+
+        };
+
+        class MobilInfo {
+            public:
+
+                void GasInfo() {
+
+                    cout << "Mobil Info " << endl;
+                }
+
+        };
+
+        class ChevronInfo {
+            public:
+
+                void GasInfo() {
+
+                    cout << "Chevron Info" << endl;
+                }
+
+        };
+
+        class ChevTexInfo {
+            public:
+
+                void GasInfo() {
+
+                    cout << "Chev Tex Info." << endl;
+                }
+
+        };
+
+        class BPInfo {
+            public:
+
+                void GasInfo() {
+
+                    cout << "BP Info" << endl;
+                }
 
         };
 
