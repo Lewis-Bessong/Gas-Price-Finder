@@ -11,8 +11,8 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         string PlayerChocie; 
         string GasStationName;
-        float CurrentYrGas;
-        float LastYrGas;      
+        double CurrentYrGas;
+        double LastYrGas;      
         double GasYrsDifference;
 
         //Method (Actions/Functions)
@@ -34,7 +34,6 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         void SystemOutput() { // Method for what the user sees
 
-            cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
             cout << "These Are The Gas Brands That We Have Currently.\n\n";
     
             cout << "1. Shell\n"; // shell
@@ -84,42 +83,26 @@ class GasPriceFinder { // blueprint for the system of GPF
             BP.CurrentYrGas = 3.25;
             BP.LastYrGas = 2.65;
             
+            
 
+            do { 
 
-            if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
+                cout << "These Are The Gas Brands That We Have Currently.\n\n";
+    
+                cout << "1. Shell\n"; // shell
+                cout << "2. Exxon\n" ; // exxon
+                cout << "3. Mobil\n"; // Mobil
+                cout << "4. Chevron\n"; // chevron 
+                cout << "5. Chev Tex\n"; // Chev tex
+                cout << "6. BP" << endl; // BP 
 
-                cout << "\nCurrent Year Avg: $" << Shell.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Shell.LastYrGas << "/gal\n";
+                cout << "\nInput A Number For Desired Gas Station: ";
+                cin >> PlayerChocie;
 
-            } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
-                
-                cout << "\nCurrent Year Avg: $" << Exxon.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Exxon.LastYrGas << "/gal\n";
+                if (PlayerChocie =! GasNumber)
+      
+            } while 
 
-            } else if (PlayerChocie == GasNumber.at(2)) { //conditional for Mobil (vector 2)
-                
-                cout << "\nCurrent Year Avg: $" << Mobil.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Mobil.LastYrGas << "/gal\n";
-
-            } else if (PlayerChocie == GasNumber.at(3)) { //conditional for Chevron (vector 3)
-                
-                cout << "\nCurrent Year Avg: $" << Chevron.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Chevron.LastYrGas << "/gal\n";
-
-            } else if (PlayerChocie == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
-                
-                cout << "\nCurrent Year Avg: $" << ChevTex.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << ChevTex.LastYrGas << "/gal\n";
-
-            } else if (PlayerChocie == GasNumber.at(5)) { //conditional for BP (vector 5)
-                
-                cout << "\nCurrent Year Avg: $" << BP.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << BP.LastYrGas << "/gal\n";
-
-            } else { // conditional for any other input by user 
-                cout << "\nInvlaid Input." << endl;
-
-            }
 
         }
 
@@ -240,6 +223,9 @@ int main () { // Where All code will run
     GasPriceFinder gpf;
 
     // === SYSTEM OUTPUT ===
+
+    cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
+
     gpf.SystemOutput(); // void inside class
     gpf.PlayerChocieLogic(); // void inside class
 
@@ -277,5 +263,43 @@ void SystemBoard() { // to be continued later
     cout << "           |           |           " << endl;
     cout << "           |           |           " << endl;
 
+}
+
+
+
+if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
+
+    cout << "\nCurrent Year Avg: $" << Shell.CurrentYrGas << "/gal\n";
+    cout << "Last Year Avg: $" << Shell.LastYrGas << "/gal\n";
+
+} else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
+                
+    cout << "\nCurrent Year Avg: $" << Exxon.CurrentYrGas << "/gal\n";
+    cout << "Last Year Avg: $" << Exxon.LastYrGas << "/gal\n";
+
+} else if (PlayerChocie == GasNumber.at(2)) { //conditional for Mobil (vector 2)
+                
+    cout << "\nCurrent Year Avg: $" << Mobil.CurrentYrGas << "/gal\n";
+    cout << "Last Year Avg: $" << Mobil.LastYrGas << "/gal\n";
+
+} else if (PlayerChocie == GasNumber.at(3)) { //conditional for Chevron (vector 3)
+                
+    cout << "\nCurrent Year Avg: $" << Chevron.CurrentYrGas << "/gal\n";
+    cout << "Last Year Avg: $" << Chevron.LastYrGas << "/gal\n";
+
+} else if (PlayerChocie == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
+                
+    cout << "\nCurrent Year Avg: $" << ChevTex.CurrentYrGas << "/gal\n";
+    cout << "Last Year Avg: $" << ChevTex.LastYrGas << "/gal\n";
+
+} else if (PlayerChocie == GasNumber.at(5)) { //conditional for BP (vector 5)
+                
+    cout << "\nCurrent Year Avg: $" << BP.CurrentYrGas << "/gal\n";
+    cout << "Last Year Avg: $" << BP.LastYrGas << "/gal\n";
+
+} else { // conditional for any other input by user 
+    cout << "\nInvlaid Input...\n";
+    cout << "Please Make Sure To ONLY Enter a number.\n\n";
+    
 }
 */
