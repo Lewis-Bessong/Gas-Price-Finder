@@ -9,11 +9,15 @@ class GasPriceFinder { // blueprint for the system of GPF
     public:
         // Attributes (Data/Variables)
 
+        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"};
         string PlayerChocie; 
         string GasStationName;
         double CurrentYrGas;
         double LastYrGas;      
         double GasYrsDifference;
+        bool IsValid; // for user input 
+        bool IsNotValid;
+
 
         //Method (Actions/Functions)
         void GasAnalysis() { // Text for comaparing 
@@ -83,9 +87,9 @@ class GasPriceFinder { // blueprint for the system of GPF
             BP.CurrentYrGas = 3.25;
             BP.LastYrGas = 2.65;
             
-            
+            // Do while has to do with bool 
 
-            do { 
+            do { // Need to find way to implement do while for if user inputs invalid code
 
                 cout << "These Are The Gas Brands That We Have Currently.\n\n";
     
@@ -96,12 +100,21 @@ class GasPriceFinder { // blueprint for the system of GPF
                 cout << "5. Chev Tex\n"; // Chev tex
                 cout << "6. BP" << endl; // BP 
 
+                string PlayerChocie;
                 cout << "\nInput A Number For Desired Gas Station: ";
-                cin >> PlayerChocie;
+                
 
-                if (PlayerChocie =! GasNumber)
+                if (!(cin >> PlayerChocie)) { // only runs when input is invalid, ! flips condition to being true so if conditional can be ran
+
+                    cout << "\nInvlaid Input...\n";
+                    cout << "Please Make Sure To ONLY Enter a number.\n\n";
+
+                }
       
-            } while 
+            } while (!IsValid); // Find out what this does
+
+
+            
 
 
         }
@@ -246,8 +259,7 @@ TODO:
 
 1. Find out plan for Gas Difference within code
 2. Logic for doing gas difference
-3. Figure something out for voids inside each nested class
-
+3. Experiment iwht do while code
 */
 
 
