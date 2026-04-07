@@ -88,26 +88,9 @@ class GasPriceFinder { // blueprint for the system of GPF
             BP.CurrentYrGas = 3.25;
             BP.LastYrGas = 2.65;
             
-            // Implement a better do while or a while loop below
+            // Implement the logic system here
 
-            while (true) {
-                #include <iostream>
-
-                if (cin >> PlayerChocie) {
-
-                    cout << "Testing" << endl; 
-
-                    break;
-                } else {
-
-                    cout << "Invalid Input. Please Try again\n";
-
-                    cin.clear();
-                
-                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-                }
-            }
+    
         }
 
     private: // non accesible
