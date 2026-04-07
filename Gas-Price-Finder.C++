@@ -2,6 +2,7 @@
 #include <string> // tools for strings
 #include <iomanip> // controls how numbers look when printed (like formatting, it stops raw repeatable numbers) 
 #include <vector>
+#include <limits>
 
 using namespace std;    
 
@@ -9,7 +10,7 @@ class GasPriceFinder { // blueprint for the system of GPF
     public:
         // Attributes (Data/Variables)
 
-        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"};
+        
         string PlayerChocie; 
         string GasStationName;
         double CurrentYrGas;
@@ -89,11 +90,24 @@ class GasPriceFinder { // blueprint for the system of GPF
             
             // Implement a better do while or a while loop below
 
-            
+            while (true) {
+                #include <iostream>
 
-            
+                if (cin >> PlayerChocie) {
 
+                    cout << "Testing" << endl; 
 
+                    break;
+                } else {
+
+                    cout << "Invalid Input. Please Try again\n";
+
+                    cin.clear();
+                
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+                }
+            }
         }
 
     private: // non accesible
