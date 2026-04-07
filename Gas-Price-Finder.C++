@@ -48,8 +48,8 @@ class GasPriceFinder { // blueprint for the system of GPF
             cout << "5. Chev Tex\n"; // Chev tex
             cout << "6. BP" << endl; // BP 
 
-            cout << "\nInput A Number For Desired Gas Station: ";
-            cin >> PlayerChocie;
+            // cout << "\nInput A Number For Desired Gas Station: ";
+            // cin >> PlayerChocie;
 
         }   
  
@@ -89,13 +89,20 @@ class GasPriceFinder { // blueprint for the system of GPF
             BP.LastYrGas = 2.65;
             
             // Implement the logic system here
+            do {
+
+                cout << "\nInput A Number For Desired Gas Station: ";
+                cin >> PlayerChocie;
+
+            } while (PlayerChocie != GasNumbers());
+        
 
     
         }
 
     private: // non accesible
         
-        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method), 1(0) being Shell
+        vector<string> GasNumbers = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method), 1(0) being Shell
 
         // Nested Class's For Each Gas Station info
 
