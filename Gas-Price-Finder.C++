@@ -87,32 +87,9 @@ class GasPriceFinder { // blueprint for the system of GPF
             BP.CurrentYrGas = 3.25;
             BP.LastYrGas = 2.65;
             
-            // Do while has to do with bool 
+            // Implement a better do while or a while loop below
 
-            do { // Need to find way to implement do while for if user inputs invalid code
-
-                cout << "These Are The Gas Brands That We Have Currently.\n\n";
-    
-                cout << "1. Shell\n"; // shell
-                cout << "2. Exxon\n" ; // exxon
-                cout << "3. Mobil\n"; // Mobil
-                cout << "4. Chevron\n"; // chevron 
-                cout << "5. Chev Tex\n"; // Chev tex
-                cout << "6. BP" << endl; // BP 
-
-                string PlayerChocie;
-                cout << "\nInput A Number For Desired Gas Station: ";
-                
-
-                if (!(cin >> PlayerChocie)) { // only runs when input is invalid, ! flips condition to being true so if conditional can be ran
-
-                    cout << "\nInvlaid Input...\n";
-                    cout << "Please Make Sure To ONLY Enter a number.\n\n";
-
-                }
-      
-            } while (!IsValid); // Find out what this does
-
+            
 
             
 
