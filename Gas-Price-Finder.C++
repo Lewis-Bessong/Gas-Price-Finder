@@ -122,12 +122,12 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             } else { // conditional for any other input by user 
                 
-                do {
+                do { // does this first before trying to check for while
                     cout << "Invalid." << endl;
 
                 } while (PlayerChoice == "1");
 
-            }
+            } // ABOVE TRY TO FIDN WAY TO MAKE THIS CODE WORK (DO WHILE LOGIC)
         }
 
     private: // non accesible
@@ -288,14 +288,6 @@ void SystemBoard() { // to be continued later
 
 }
 
-do {
 
-                cout << "\nInput A Number For Desired Gas Station: ";
-                cin >> PlayerChocie;
-
-            } while (PlayerChocie != GasNumbers());
-
-    
-}
 
 */
