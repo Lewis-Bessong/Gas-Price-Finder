@@ -90,42 +90,14 @@ class GasPriceFinder { // blueprint for the system of GPF
             
             // Implement the logic system here
 
-            if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
+            do {
 
-                cout << "\nCurrent Year Avg: $" << Shell.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Shell.LastYrGas << "/gal\n";
+                bool IsValid = true;
+                string PlayerChocie;
+                cout << "\nInput A Number For Desired Gas Station: ";
+                cin >> PlayerChocie;
 
-            } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
-                
-                cout << "\nCurrent Year Avg: $" << Exxon.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Exxon.LastYrGas << "/gal\n";
-
-            } else if (PlayerChocie == GasNumber.at(2)) { //conditional for Mobil (vector 2)
-                
-                cout << "\nCurrent Year Avg: $" << Mobil.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Mobil.LastYrGas << "/gal\n";
-
-            } else if (PlayerChocie == GasNumber.at(3)) { //conditional for Chevron (vector 3)
-                
-                cout << "\nCurrent Year Avg: $" << Chevron.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << Chevron.LastYrGas << "/gal\n";
-
-            } else if (PlayerChocie == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
-                
-                cout << "\nCurrent Year Avg: $" << ChevTex.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << ChevTex.LastYrGas << "/gal\n";
-
-            } else if (PlayerChocie == GasNumber.at(5)) { //conditional for BP (vector 5)
-                
-                cout << "\nCurrent Year Avg: $" << BP.CurrentYrGas << "/gal\n";
-                cout << "Last Year Avg: $" << BP.LastYrGas << "/gal\n";
-
-            } else { // conditional for any other input by user 
-                cout << "\nInvlaid Input...\n";
-                cout << "Please Make Sure To ONLY Enter a number.\n\n";
-            }
-   
-        }
+            } while (IsValid);
 
     private: // non accesible
         
@@ -294,4 +266,39 @@ do {
 
     
 }
+
+if (PlayerChocie == GasNumber.at(0)) { // conditional for Shell (vector 0)
+
+                cout << "\nCurrent Year Avg: $" << Shell.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg: $" << Shell.LastYrGas << "/gal\n";
+
+            } else if (PlayerChocie == GasNumber.at(1)) { //conditional for Exxon (vector 1)
+                
+                cout << "\nCurrent Year Avg: $" << Exxon.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg: $" << Exxon.LastYrGas << "/gal\n";
+
+            } else if (PlayerChocie == GasNumber.at(2)) { //conditional for Mobil (vector 2)
+                
+                cout << "\nCurrent Year Avg: $" << Mobil.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg: $" << Mobil.LastYrGas << "/gal\n";
+
+            } else if (PlayerChocie == GasNumber.at(3)) { //conditional for Chevron (vector 3)
+                
+                cout << "\nCurrent Year Avg: $" << Chevron.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg: $" << Chevron.LastYrGas << "/gal\n";
+
+            } else if (PlayerChocie == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
+                
+                cout << "\nCurrent Year Avg: $" << ChevTex.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg: $" << ChevTex.LastYrGas << "/gal\n";
+
+            } else if (PlayerChocie == GasNumber.at(5)) { //conditional for BP (vector 5)
+                
+                cout << "\nCurrent Year Avg: $" << BP.CurrentYrGas << "/gal\n";
+                cout << "Last Year Avg: $" << BP.LastYrGas << "/gal\n";
+
+            } else { // conditional for any other input by user 
+                cout << "\nInvlaid Input...\n";
+                cout << "Please Make Sure To ONLY Enter a number.\n\n";
+            }
 */
