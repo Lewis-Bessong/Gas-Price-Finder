@@ -48,8 +48,8 @@ class GasPriceFinder { // blueprint for the system of GPF
             cout << "5. Chev Tex\n"; // Chev tex
             cout << "6. BP" << endl; // BP 
 
-            // cout << "\nInput A Number For Desired Gas Station: ";
-            // cin >> PlayerChocie;
+            cout << "\nInput A Number For Desired Gas Station: ";
+            cin >> PlayerChoice;
 
         }   
  
@@ -125,7 +125,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 do {
                     cout << "Invalid." << endl;
 
-                } while (!(PlayerChoice == "1"));
+                } while (PlayerChoice == "1");
 
             }
         }
