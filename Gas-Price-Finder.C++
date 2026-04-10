@@ -71,8 +71,8 @@ class GasPriceFinder { // blueprint for the system of GPF
             //Class Mobil
             MobilInfo Mobil;
             Mobil.GasStationName = "Mobil"; 
-            // Add: Mobil.CurrentYrGas info here
-            // Add: Mobil.LastYrGas info here
+            Mobil.CurrentYrGas = 2.70;
+            Mobil.LastYrGas = 3.32;
 
             //Clas Chevron
             ChevronInfo Chevron;
