@@ -49,11 +49,11 @@ class GasPriceFinder { // blueprint for the system of GPF
             cout << "6. BP" << endl; // BP 
 
             cout << "\nInput A Number For Desired Gas Station: ";
-            cin >> PlayerChoice;
+            cin >> UserChoice;
 
         }   
  
-        void PlayerChocieLogic() { // Method for Logic when User puts input\
+        void UserChoiceLogic() { // Method for Logic when User puts input\
 
             //Objects For Nested Class Shell
             ShellInfo Shell;
@@ -90,7 +90,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             
             // Implement the logic system here
 
-            bool UserInput = true; 
+            bool UserInput = false; 
 
             if (UserChoice == GasNumber.at(0)) { // conditional for Shell (vector 0)
 
@@ -125,7 +125,9 @@ class GasPriceFinder { // blueprint for the system of GPF
             } else { // conditional for any other input by user 
                 
                 do { // does this first before trying to check for while
-                    cout << "Invalid." << endl;
+                    cout << "\nInvalid.\n";
+
+                    cout << "Input A Number For Desired Gas Station: " << endl;
 
                 } while (UserInput);
 
@@ -253,7 +255,7 @@ int main () { // Where All code will run
     cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
 
     gpf.SystemOutput(); // void inside class
-    gpf.PlayerChocieLogic(); // void inside class
+    gpf.UserChoiceLogic(); // void inside class
 
     return 0;
 }
