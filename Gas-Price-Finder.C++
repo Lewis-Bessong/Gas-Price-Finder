@@ -2,14 +2,13 @@
 #include <string> // tools for strings
 #include <iomanip> // controls how numbers look when printed (like formatting, it stops raw repeatable numbers) 
 #include <vector>
-#include <limits>
 
 using namespace std;    
 
 class GasPriceFinder { // blueprint for the system of GPF 
-    public:
-        // Attributes (Data/Variables)
 
+    public: // accessible to main
+        // === Attributes (Data/Variables) ===
         
         string UserChoice; 
         string GasStationName;
@@ -19,9 +18,9 @@ class GasPriceFinder { // blueprint for the system of GPF
         bool IsValid; // for user input 
         bool IsNotValid;
 
+        // ==== Method (Actions/Functions) ====
 
-        //Method (Actions/Functions)
-        void GasAnalysis() { // Text for comaparing 
+        void GasAnalysis() { // Text/Logic for comaparing Gas prices by year 
 
             if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
 
@@ -37,7 +36,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }
 
-        void SystemOutput() { // Method for what the user sees
+        void SystemOutput() { // What the user sees (Method)
 
             cout << "These Are The Gas Brands That We Have Currently.\n\n";
     
@@ -53,7 +52,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }   
  
-        void UserChoiceLogic() { // Method for Logic when User puts input\
+        void UserChoiceLogic() { // Logic when User puts input (Method)
 
             //Objects For Nested Class Shell
             ShellInfo Shell;
@@ -143,11 +142,11 @@ class GasPriceFinder { // blueprint for the system of GPF
             }
         }
 
-    private: // non accesible
+    private: // non accesible to main
         
-        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for Playerchoicelogic (method), 1(0) being Shell
+        vector<string> GasNumber = { "1", "2", "3", "4", "5", "6"}; // used for UserChoicelogic (method)
 
-        // Nested Class's For Each Gas Station info
+        // ==== Nested Class's with Gas Brand Info/Attributes Inside ====
 
         class ShellInfo {
             public:
@@ -254,7 +253,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 };
 
 
-int main () { // Where All code will run
+int main () { // Where All code will run and be visible to user
 
     // For Method calling within the class
     GasPriceFinder gpf;
@@ -265,6 +264,8 @@ int main () { // Where All code will run
 
     gpf.SystemOutput(); // void inside class
     gpf.UserChoiceLogic(); // void inside class
+    // Method/system for comapring gas prices ??
+
 
     return 0;
 }
@@ -283,7 +284,10 @@ TODO:
 
 1. Find out plan for Gas Difference within code
 2. Logic for doing gas difference
-3. Experiment iwht do while code
+3. Understand the UCL (UserChocieLogic)
+4. Make code easy to read and understandable
+5. Add object info for mobil
+
 */
 
 
@@ -300,7 +304,5 @@ void SystemBoard() { // to be continued later
     cout << "           |           |           " << endl;
 
 }
-
-
 
 */
