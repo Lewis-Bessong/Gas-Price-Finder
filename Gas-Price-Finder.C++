@@ -52,45 +52,50 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }   
  
-        void UserChoiceLogic() { // Logic when User puts input (Method)
+        void UserChoiceLogic() { // Logic when User puts input and Where Gas Brand Info is (Method)
 
-            //Objects For Nested Class Shell
+            // ==== Objects/Instances For Gas Brands ====
+
+            //Class Shell
             ShellInfo Shell;
             Shell.GasStationName = "Shell";
             Shell.CurrentYrGas = 3.40;
             Shell.LastYrGas = 2.75;
             
-            //Objects for Nested Class Exxon
+            //Class Exxon
             ExxonInfo Exxon;
             Exxon.GasStationName = "Exxon";
             Exxon.CurrentYrGas = 3.30;
             Exxon.LastYrGas = 2.70; 
 
-            //Objects for Nested Class Mobil
+            //Class Mobil
             MobilInfo Mobil;
             Mobil.GasStationName = "Mobil"; 
             // Add: Mobil.CurrentYrGas info here
             // Add: Mobil.LastYrGas info here
 
-            //Objects for Nested clas Chevron
+            //Clas Chevron
             ChevronInfo Chevron;
             Chevron.GasStationName = "Chevron";
             Chevron.CurrentYrGas = 3.45;
             Chevron.LastYrGas = 2.80; 
 
-            //Objects for nested class Chev tex
+            //Class Chev tex
             ChevTexInfo ChevTex;
             ChevTex.GasStationName = "ChevTex";
             ChevTex.CurrentYrGas = 3.40;
             ChevTex.LastYrGas = 2.70;
 
-            //Objects for nested class BP
+            //Class BP
             BPInfo BP;
             BP.GasStationName = "BP";
             BP.CurrentYrGas = 3.25;
             BP.LastYrGas = 2.65;
+
+            // Class
             
-            // Implement the logic system here
+
+            // ==== User Input Logic ====
 
             bool UserInput = false; //find out what this does
 
