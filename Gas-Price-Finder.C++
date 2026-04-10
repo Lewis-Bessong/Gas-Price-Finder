@@ -69,6 +69,9 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             //Objects for Nested Class Mobil
             MobilInfo Mobil;
+            Mobil.GasStationName = "Mobil"; 
+            // Add: Mobil.CurrentYrGas info here
+            // Add: Mobil.LastYrGas info here
 
             //Objects for Nested clas Chevron
             ChevronInfo Chevron;
@@ -90,7 +93,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             
             // Implement the logic system here
 
-            bool UserInput = false; 
+            bool UserInput = false; //find out what this does
 
             if (UserChoice == GasNumber.at(0)) { // conditional for Shell (vector 0)
 
@@ -126,12 +129,18 @@ class GasPriceFinder { // blueprint for the system of GPF
                 
                 do { // does this first before trying to check for while
                     cout << "\nInvalid.\n";
+                    cout << "Please enter numbers that match the gas numbers in the lsit." << endl;
 
-                    cout << "Input A Number For Desired Gas Station: " << endl;
+                    cout << "\nInput A Number For Desired Gas Station: ";
+                    cin >> UserChoice;
 
-                } while (UserInput);
+                    UserChoiceLogic(); // same logic again.
 
-            } // ABOVE TRY TO FIDN WAY TO MAKE THIS CODE WORK (DO WHILE LOGIC)
+                    // break line here?? 
+
+                } while (UserInput); 
+
+            }
         }
 
     private: // non accesible
