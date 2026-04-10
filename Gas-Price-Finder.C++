@@ -11,7 +11,7 @@ class GasPriceFinder { // blueprint for the system of GPF
         // Attributes (Data/Variables)
 
         
-        string PlayerChoice; 
+        string UserChoice; 
         string GasStationName;
         double CurrentYrGas;
         double LastYrGas;      
@@ -90,32 +90,34 @@ class GasPriceFinder { // blueprint for the system of GPF
             
             // Implement the logic system here
 
-            if (PlayerChoice == GasNumber.at(0)) { // conditional for Shell (vector 0)
+            bool UserInput = true; 
+
+            if (UserChoice == GasNumber.at(0)) { // conditional for Shell (vector 0)
 
                 cout << "\nCurrent Year Avg: $" << Shell.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Shell.LastYrGas << "/gal\n";
 
-            } else if (PlayerChoice == GasNumber.at(1)) { //conditional for Exxon (vector 1)
+            } else if (UserChoice == GasNumber.at(1)) { //conditional for Exxon (vector 1)
                 
                 cout << "\nCurrent Year Avg: $" << Exxon.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Exxon.LastYrGas << "/gal\n";
 
-            } else if (PlayerChoice == GasNumber.at(2)) { //conditional for Mobil (vector 2)
+            } else if (UserChoice == GasNumber.at(2)) { //conditional for Mobil (vector 2)
                 
                 cout << "\nCurrent Year Avg: $" << Mobil.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Mobil.LastYrGas << "/gal\n";
 
-            } else if (PlayerChoice == GasNumber.at(3)) { //conditional for Chevron (vector 3)
+            } else if (UserChoice == GasNumber.at(3)) { //conditional for Chevron (vector 3)
                 
                 cout << "\nCurrent Year Avg: $" << Chevron.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Chevron.LastYrGas << "/gal\n";
 
-            } else if (PlayerChoice == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
+            } else if (UserChoice == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
                 
                 cout << "\nCurrent Year Avg: $" << ChevTex.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << ChevTex.LastYrGas << "/gal\n";
 
-            } else if (PlayerChoice == GasNumber.at(5)) { //conditional for BP (vector 5)
+            } else if (UserChoice == GasNumber.at(5)) { //conditional for BP (vector 5)
                 
                 cout << "\nCurrent Year Avg: $" << BP.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << BP.LastYrGas << "/gal\n";
@@ -125,7 +127,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 do { // does this first before trying to check for while
                     cout << "Invalid." << endl;
 
-                } while (PlayerChoice == "1");
+                } while (UserInput);
 
             } // ABOVE TRY TO FIDN WAY TO MAKE THIS CODE WORK (DO WHILE LOGIC)
         }
