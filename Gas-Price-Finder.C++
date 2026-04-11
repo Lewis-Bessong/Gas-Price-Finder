@@ -18,16 +18,6 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         // ==== Method (Actions/Functions) ====
 
-        void GasAnalysis() { // Text/Logic for comaparing Gas prices by year 
-
-            // code below can have incorrect comaprisons (something to do with variables), Gasyrsdifferences not being displayed properly
-            // might need to put GasAnalysis in each nested calss instead
-            
-
-            
-
-        }
-
         void SystemOutput() { // What the user sees (Method)
 
             cout << "These Are The Gas Brands That We Have Currently.\n\n";
@@ -105,7 +95,9 @@ class GasPriceFinder { // blueprint for the system of GPF
 
                 cout << "\nCurrent Year Avg: $" << Shell.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Shell.LastYrGas << "/gal\n";
-                cout << "Difference: " << Shell.GasYrsDifference << "$" << endl; // Shows Diffrence to user
+                cout << "Difference: $" << Shell.GasYrsDifference << endl; // Shows Diffrence to user
+
+                Shell.GasAnalysis(); // Gas Analysis for shell (Nested class void/ method) 
 
             } else if (UserChoice == GasNumber.at(1)) { //conditional for Exxon (vector 1)
 
@@ -113,7 +105,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 
                 cout << "\nCurrent Year Avg: $" << Exxon.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Exxon.LastYrGas << "/gal\n";
-                cout << "Difference: " << Exxon.GasYrsDifference << "$" << endl;
+                cout << "Difference: $" << Exxon.GasYrsDifference << endl;
 
 
             } else if (UserChoice == GasNumber.at(2)) { //conditional for Mobil (vector 2)
@@ -122,7 +114,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 
                 cout << "\nCurrent Year Avg: $" << Mobil.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Mobil.LastYrGas << "/gal\n";
-                cout << "Difference: " << Mobil.GasYrsDifference << "$" << endl;
+                cout << "Difference: $" << Mobil.GasYrsDifference << endl;
 
             } else if (UserChoice == GasNumber.at(3)) { //conditional for Chevron (vector 3)
 
@@ -130,7 +122,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 
                 cout << "\nCurrent Year Avg: $" << Chevron.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Chevron.LastYrGas << "/gal\n";
-                cout << "Difference: " << Chevron.GasYrsDifference << "$" << endl;
+                cout << "Difference: $" << Chevron.GasYrsDifference << endl;
 
             } else if (UserChoice == GasNumber.at(4)) { //conditional for Chev Tex (vector 4)
 
@@ -138,7 +130,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 
                 cout << "\nCurrent Year Avg: $" << ChevTex.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << ChevTex.LastYrGas << "/gal\n";
-                cout << "Difference: " << ChevTex.GasYrsDifference << "$" << endl;
+                cout << "Difference: $" << ChevTex.GasYrsDifference << endl;
 
             } else if (UserChoice == GasNumber.at(5)) { //conditional for BP (vector 5)
 
@@ -146,7 +138,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 
                 cout << "\nCurrent Year Avg: $" << BP.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << BP.LastYrGas << "/gal\n";
-                cout << "Difference: " << BP.GasYrsDifference << "$" << endl;
+                cout << "Difference: $" << BP.GasYrsDifference << endl;
 
             } else { // conditional for any other input by user 
                 
@@ -183,17 +175,22 @@ class GasPriceFinder { // blueprint for the system of GPF
                 double GasYrsDifference;
 
                 // Methods
-                void GasInfo() { // possible use for gas analysis in here
+                void GasAnalysis() {
+
+                    if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
+
+                        cout << "Analysis: Current year gas price are LESS than last years gas price by -" << GasYrsDifference << "." << endl;
+
+                    } else if (CurrentYrGas > LastYrGas){ // Current yr gas greater than las yr gas
+
+                        cout << "Analysis: Current year gas prices are GREATER than last years gas price by +" << GasYrsDifference << "." << endl;
+
+                    } else { // both years are equal
+
+                        cout << "Analysis: Both years have the same prices." << endl;
+                    }
 
                 }
-
-            private:
-
-                void GasInfo() {
-
-                
-                }
-
 
         };
 
@@ -297,7 +294,6 @@ int main () { // Where All code will run and be visible to user
 
     gpf.SystemOutput(); // void inside gpf class
     gpf.UserChoiceLogic(); // void inside gpf class
-    gpf.GasAnalysis(); // void inside gpf class
 
     // Method/system for comapring gas prices ??
 
@@ -340,16 +336,4 @@ void SystemBoard() { // to be continued later
 
 }
 
-if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
-
-                cout << "\nAnalysis: Current year gas price are LESS than last years gas price by -" << GasYrsDifference << "." << endl;
-
-            } else if (CurrentYrGas > LastYrGas){ // Current yr gas greater than las yr gas
-
-                cout << "\nAnalysis: Current year gas prices are GREATER than last years gas price by +" << GasYrsDifference << "." << endl;
-
-            } else { // both years are equal
-
-                cout << "\nAnalysis: Both years have the same prices." << endl;
-            }
 */
