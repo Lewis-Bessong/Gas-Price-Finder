@@ -22,19 +22,9 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             // code below can have incorrect comaprisons (something to do with variables), Gasyrsdifferences not being displayed properly
             // might need to put GasAnalysis in each nested calss instead
+            
 
-            if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
-
-                cout << "\nAnalysis: Current year gas price are LESS than last years gas price by -" << GasYrsDifference << "." << endl;
-
-            } else if (CurrentYrGas > LastYrGas){ // Current yr gas greater than las yr gas
-
-                cout << "\nAnalysis: Current year gas prices are GREATER than last years gas price by +" << GasYrsDifference << "." << endl;
-
-            } else { // both years are equal
-
-                cout << "\nAnalysis: Both years have the same prices." << endl;
-            }
+            
 
         }
 
@@ -54,7 +44,9 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }   
  
-        void UserChoiceLogic() { // Logic when User puts input and Where Gas Brand Info is (Method)
+        void UserChoiceLogic() { // Logic For User input and Where Gas Brand Info is (Method)
+
+
 
             // ==== Objects/Instances For Gas Brands ====
 
@@ -103,7 +95,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             // Upcoming Gas Class Here
             
 
-            // ==== User Input Logic ====
+            // ==== User Input Logic ==== (Future Change of logic to switch flow statments)
 
             bool UserInput = false; //find out what this does
 
@@ -195,6 +187,14 @@ class GasPriceFinder { // blueprint for the system of GPF
 
                 }
 
+            private:
+
+                void GasInfo() {
+
+                
+                }
+
+
         };
 
         class ExxonInfo {
@@ -209,6 +209,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
                 // Methods
                 void GasInfo() { // possible use for gas analysis in here
+
 
                 }
 
@@ -339,4 +340,16 @@ void SystemBoard() { // to be continued later
 
 }
 
+if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
+
+                cout << "\nAnalysis: Current year gas price are LESS than last years gas price by -" << GasYrsDifference << "." << endl;
+
+            } else if (CurrentYrGas > LastYrGas){ // Current yr gas greater than las yr gas
+
+                cout << "\nAnalysis: Current year gas prices are GREATER than last years gas price by +" << GasYrsDifference << "." << endl;
+
+            } else { // both years are equal
+
+                cout << "\nAnalysis: Both years have the same prices." << endl;
+            }
 */
