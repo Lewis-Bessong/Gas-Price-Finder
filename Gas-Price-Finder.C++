@@ -15,13 +15,13 @@ class GasPriceFinder { // blueprint for the system of GPF
         double CurrentYrGas;
         double LastYrGas;      
         double GasYrsDifference;
-        bool IsValid; // for user input 
-        bool IsNotValid;
 
         // ==== Method (Actions/Functions) ====
 
         void GasAnalysis() { // Text/Logic for comaparing Gas prices by year 
 
+            // code below can have incorrect comaprisons (something to do with variables), Gasyrsdifferences not being displayed properly
+            // might need to put GasAnalysis in each nested calss instead
 
             if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
 
@@ -46,7 +46,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             cout << "2. Exxon\n" ; // exxon
             cout << "3. Mobil\n"; // Mobil
             cout << "4. Chevron\n"; // chevron 
-            cout << "5. Chev Tex\n"; // Chev tex
+            cout << "5. Chev Tex (Texaco)\n"; // Chev tex
             cout << "6. BP" << endl; // BP 
 
             cout << "\nInput A Number For Desired Gas Station: ";
@@ -167,7 +167,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
                     UserChoiceLogic(); // same logic again.
 
-                    break;
+                    break; // get out of whole loop end else loop for next void/method within main
 
                 } while (UserInput); 
 
@@ -191,7 +191,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 double GasYrsDifference;
 
                 // Methods
-                void GasInfo() {
+                void GasInfo() { // possible use for gas analysis in here
 
                 }
 
@@ -208,7 +208,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                 double GasYrsDifference;
 
                 // Methods
-                void GasInfo() {
+                void GasInfo() { // possible use for gas analysis in here
 
                 }
 
@@ -317,7 +317,7 @@ GPF Plan (4/10/2026)
 TODO:
 
 1. Fix output in 'GasAnalysis' (figure out how to display gas difference in gas anaylsis) 
-2. 
+2. Better user of dollar sign for difference 
 3. Understand the UCL (UserChocieLogic)
 4. Make code easy to read and understandable
 5. 
