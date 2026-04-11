@@ -34,9 +34,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         }   
  
-        void UserChoiceLogic() { // Logic For User input and Where Gas Brand Info is (Method)
-
-
+        void SystemLogic() { // Logic For User input and Where Gas Brand Info is (Method)
 
             // ==== Objects/Instances For Gas Brands ====
 
@@ -84,6 +82,10 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             // Upcoming Gas Class Here
             
+    
+
+
+
 
             // ==== User Input Logic ==== (Future Change of logic to switch flow statments)
 
@@ -158,7 +160,7 @@ class GasPriceFinder { // blueprint for the system of GPF
                     cout << "\nInput A Number For Desired Gas Station: ";
                     cin >> UserChoice;
 
-                    UserChoiceLogic(); // same logic again.
+                    SystemLogic(); // same logic again.
 
                     break; // get out of whole loop end else loop for next void/method within main
 
@@ -166,6 +168,8 @@ class GasPriceFinder { // blueprint for the system of GPF
 
             }
         }
+
+        // Future Method for T chart here
 
     private: // non accesible to main
         
@@ -366,7 +370,7 @@ int main () { // Where All code will run and be visible to user
     cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
 
     gpf.SystemOutput(); // void inside gpf class
-    gpf.UserChoiceLogic(); // void inside gpf class
+    gpf.SystemLogic(); // void inside gpf class
 
     // Method/system for comapring gas prices ??
 
@@ -377,20 +381,20 @@ int main () { // Where All code will run and be visible to user
 
 /*
 
-GPF Plan (4/10/2026)
+GPF Plan (4/11/2026)
 
-1. ask question
-2. user inputs brand (invalid features)
-3. system takes info from already made info of brand
-4. displays info in a t chart/ board (future)
+1. User Gets info about gas brand (Finished 4/11/2026)
+2. User gets display chart with reccomendation
+3. User can see Gas info from different states based on what the system has
+4. User has "gps" for gas info, has website for future access
 
-TODO:
+TODO: 
 
-1. Fix output in 'GasAnalysis' (figure out how to display gas difference in gas anaylsis) 
-2. Better user of dollar sign for difference 
-3. Understand the UCL (UserChocieLogic)
-4. Make code easy to read and understandable
-5. 
+1. Implement T chart for user
+2. Change user input logic to switch statments
+3. Add more Gas Brands 
+4. Fine Tune Gas Prices for each gas brand to be more accurate
+5. Add Method inside GPF that deals with reccomendations
 
 */
 
