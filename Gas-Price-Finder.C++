@@ -307,7 +307,7 @@ int main () { // Where All code will run and be visible to user
 
 /*
 
-GPF Plan 
+GPF Plan (4/10/2026)
 
 1. ask question
 2. user inputs brand (invalid features)
@@ -316,11 +316,11 @@ GPF Plan
 
 TODO:
 
-1. Find out plan for Gas Difference within code
-2. Logic for doing gas difference
+1. Fix output in 'GasAnalysis' (figure out how to display gas difference in gas anaylsis) 
+2. 
 3. Understand the UCL (UserChocieLogic)
 4. Make code easy to read and understandable
-5. Add object info for mobil
+5. 
 
 */
 
