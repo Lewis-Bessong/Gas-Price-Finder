@@ -132,15 +132,15 @@ class GasPriceFinder { // blueprint for the system of GPF
             } else { // conditional for any other input by user 
                 
                 do { // does this first before trying to check for while
-                    cout << "\nInvalid.\n";
-                    cout << "Please enter numbers that match the gas numbers in the lsit." << endl;
+                    cout << "\nInvalid Input...\n";
+                    cout << "Please enter numbers that match the gas numbers in the list." << endl;
 
                     cout << "\nInput A Number For Desired Gas Station: ";
                     cin >> UserChoice;
 
                     UserChoiceLogic(); // same logic again.
 
-                    // break line here?? 
+                    break;
 
                 } while (UserInput); 
 
@@ -267,8 +267,10 @@ int main () { // Where All code will run and be visible to user
 
     cout << "Welcome to the Gas Price Finder! (Thats Based on Texas, For now.)\n";
 
-    gpf.SystemOutput(); // void inside class
-    gpf.UserChoiceLogic(); // void inside class
+    gpf.SystemOutput(); // void inside gpf class
+    gpf.UserChoiceLogic(); // void inside gpf class
+    gpf.GasAnalysis(); // void inside gpf class
+
     // Method/system for comapring gas prices ??
 
 
