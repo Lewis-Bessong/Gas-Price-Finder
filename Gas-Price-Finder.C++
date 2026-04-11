@@ -14,13 +14,15 @@ class GasPriceFinder { // blueprint for the system of GPF
         string GasStationName;
         double CurrentYrGas;
         double LastYrGas;      
-        double GasYrsDifference;
+        float GasYrsDifference;
         bool IsValid; // for user input 
         bool IsNotValid;
 
         // ==== Method (Actions/Functions) ====
 
         void GasAnalysis() { // Text/Logic for comaparing Gas prices by year 
+
+             // calculation for how much prices have changed by
 
             if (CurrentYrGas < LastYrGas){ // Current yr gas less than last yr gas 
 
@@ -29,6 +31,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             } else if (CurrentYrGas > LastYrGas){ // Current yr gas greater than las yr gas
 
                 cout << "The avg. current year gas price is greater than last years avg. gas price ." << endl;
+
             } else { // both years are equal
 
                 cout << " The avg. current year gas is the same as last years avg. gas price." << endl;
@@ -61,6 +64,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             Shell.GasStationName = "Shell";
             Shell.CurrentYrGas = 3.40;
             Shell.LastYrGas = 2.75;
+            Shell.GasYrsDifference;
             
             //Class Exxon
             ExxonInfo Exxon;
@@ -103,6 +107,8 @@ class GasPriceFinder { // blueprint for the system of GPF
 
                 cout << "\nCurrent Year Avg: $" << Shell.CurrentYrGas << "/gal\n";
                 cout << "Last Year Avg: $" << Shell.LastYrGas << "/gal\n";
+                cout << "Difference: $" << Shell.GasYrsDifference << endl;
+
 
             } else if (UserChoice == GasNumber.at(1)) { //conditional for Exxon (vector 1)
                 
@@ -161,10 +167,12 @@ class GasPriceFinder { // blueprint for the system of GPF
                 string GasStationName;
                 double CurrentYrGas;
                 double LastYrGas;      
-                double GasYrsDifference;
+                float GasYrsDifference = CurrentYrGas - LastYrGas;
 
                 // Methods
                 void GasInfo() {
+
+                    cout << "It has changed by : $" << GasYrsDifference << endl;
 
                 }
 
