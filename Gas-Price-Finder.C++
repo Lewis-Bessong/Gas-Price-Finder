@@ -80,7 +80,7 @@ class GasPriceFinder { // blueprint for the system of GPF
             BP.LastYrGas = 2.65;
             BP.GasYrsDifference;
 
-            // Upcoming Gas Class Here
+            // Upcoming Gas Class Here (Valero) 
             
     
 
@@ -357,6 +357,7 @@ class GasPriceFinder { // blueprint for the system of GPF
 
         };
 
+        // class valero
 };
 
 
